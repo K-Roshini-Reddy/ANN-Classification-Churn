@@ -2,6 +2,6 @@ streamlit==1.36.0
 tensorflow-cpu==2.20.0
 numpy==2.1.3
 pandas==2.2.3
-scikit-learn==1.5.1
-h5py==3.11.0
-protobuf==4.25.3
+scikit-learn>=1.5         # let pip choose a wheel; avoids building from source
+h5py>=3.11
+protobuf>=5.28.0          # TF 2.20 needs this
