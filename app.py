@@ -13,7 +13,7 @@ from tensorflow import keras
 @st.cache_resource
 def load_model_and_assets():
     # Model: prefer new Keras loader; disable compile for portability
-    model = keras.saving.load_model("model.h5", compile=False, safe_mode=False)
+    model = keras.models.load_model("model.h5", compile=False)
 
     with open("label_encoder_gender.pkl", "rb") as f:
         label_encoder_gender = pickle.load(f)
