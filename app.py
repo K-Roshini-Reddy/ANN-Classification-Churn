@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 
 # Keras 3-compatible load (works with TF 2.17+)
-import keras
+from tensorflow import keras
 
 # -----------------------------
 # Load artifacts
